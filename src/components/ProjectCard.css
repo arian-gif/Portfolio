@@ -1,0 +1,103 @@
+.card {
+    background: linear-gradient(135deg, #f7f7f7, #eaeaea); /* Light gray gradient */
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    padding: 40px;
+    margin: 24px auto;
+    width: 90%;
+    max-width: 1200px;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.image {
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    grid-auto-flow: dense;
+}
+.grid-item:nth-last-child(-n+3):nth-child(3n + 1) {
+    grid-column: span 3;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0; /* Add subtle border */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.project:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+.project-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px; /* Slightly larger for better readability */
+    color: #1b1b1b; /* Darker for better contrast */
+    margin-bottom: 10px;
+    font-weight: 600; /* Bold for a cleaner look */
+    letter-spacing: 0.5px; /* Slight spacing for clarity */
+}
+
+.project-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px; /* Slightly larger for balance */
+    color: #4f4f4f; /* Softer gray for a modern feel */
+    margin-bottom: 14px;
+    font-weight: 400; /* Regular weight for easier reading */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+
+.button {
+    background-color: #1b5e20; /* Dark green */
+    color: black;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(27, 94, 32, 0.4); /* Dark green glow */
+    transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+    background-color: #2e7d32; /* Lighter dark green */
+    box-shadow: 0 6px 16px rgba(46, 125, 50, 0.6); /* Stronger glow */
+    transform: translateY(-2px);
+}
+
+.github-button{
+    margin-top: 2rem;
+}
+
+

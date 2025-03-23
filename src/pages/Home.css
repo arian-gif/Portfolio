@@ -1,0 +1,122 @@
+/* Define color variables */
+:root {
+    --primary-color: #64ffda;
+    --text-color: #ccd6f6;
+    --background-color: #0a192f;
+    --secondary-text-color: #8892b0;
+    --highlight-color: #64ffda;
+    --button-hover: #52e2c2;
+}
+
+/* Global styles */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.opening {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    gap:4rem;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem; /* Reduced gap between elements */
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Header Section */
+
+.intro {
+    font-size: 18px; /* Reduced font size slightly */
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    margin-bottom: 0; /* Removed extra spacing */
+}
+
+.name {
+    font-size: 64px; /* Reduced size slightly */
+    font-weight: 800;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.build {
+    font-size: 48px; /* Reduced size slightly */
+    font-weight: 700;
+    color: var(--secondary-text-color);
+    margin-top: 5px; /* Reduced margin */
+}
+
+/* Description Section */
+.description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #dcdcdc !important; /* Changed to white */
+    margin-top: 10px;
+    max-width: 700px;
+}
+
+/* Button Section */
+.buttons {
+    display: flex;
+    gap: 12px; /* Reduced gap between buttons */
+    margin-top: 20px; /* Reduced top margin */
+}
+
+.primaryButton,
+.secondaryButton {
+    padding: 12px 24px; /* Reduced padding */
+    font-size: 16px; /* Reduced font size */
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    border: none;
+}
+
+/* Primary Button */
+.primaryButton {
+    background: linear-gradient(135deg, #64ffda 0%, #52e2c2 100%);
+    color: #0a192f;
+}
+
+.primaryButton:hover {
+    background: linear-gradient(135deg, #52e2c2 0%, #40d0b0 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(100, 255, 218, 0.3);
+}
+
+/* Secondary Button */
+.secondaryButton {
+    background-color: transparent;
+    color: var(--highlight-color);
+    border: 2px solid var(--highlight-color);
+}
+
+.secondaryButton:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(100, 255, 218, 0.2);
+}
+
+/* Avatar Section */
+.homeImg {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Reduced top margin */
+    margin-left: 10px; 
+}
+
+

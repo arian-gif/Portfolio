@@ -1,0 +1,16 @@
+.spacer {
+    height: 5rem; /* Default height */
+}
+
+/* Adjust size based on screen width */
+@media (max-width: 768px) {
+    .spacer {
+        height: 10rem; /* Larger space for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .spacer {
+        height: 12rem; /* Even larger space for very small screens */
+    }
+}

@@ -1,0 +1,268 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2e364a;
+    color: #333;
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+
+.container {
+    padding: 30px 60px;
+    position: relative;
+    width: 50%;
+    animation: moveDown 1s linear forwards;
+    opacity: 0;
+    display: flex;
+    align-items: center; 
+}
+
+@keyframes moveDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container:nth-child(1) {
+    animation-delay: 0s;
+}
+.container:nth-child(2) {
+    animation-delay: 1s;
+}
+.container:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 50%;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+
+.text-box {
+    padding: 35px 45px;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    border-radius: 16px;
+    font-size: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+    max-width: 100%; 
+}
+
+.text-box h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #2e364a;
+}
+
+.text-box small {
+    display: block;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.text-box p {
+    line-height: 1.6;
+    color: #444;
+}
+
+
+.company {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    transition: transform 0.3s ease;
+    border: 3px solid black;
+}
+
+
+.left-container .company {
+    left: 94%;
+}
+
+.right-container .company {
+    left: -6%;
+}
+
+
+.pro-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    border: 3px solid #f1f1f1; 
+    position: absolute;
+    top: 20%; 
+    transform: translateY(-50%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.left-container .pro-image {
+    left: 120%; 
+}
+
+
+.right-container .pro-image {
+    right: 120%; 
+}
+
+
+.container:hover .pro-image {
+    transform: translateY(-50%) scale(1.1); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+}
+
+
+
+
+.container:hover .company {
+    transform: scale(1.2) translate(-50%, -50%);
+}
+
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #f1f1f1;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: growLine 2s ease-out forwards;
+}
+
+@keyframes growLine {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+
+.left-container-arrow,
+.right-container-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-style: solid;
+}
+
+.left-container-arrow {
+    right: -16px;
+    border-width: 12px 0 12px 16px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.right-container-arrow {
+    left: -16px;
+    border-width: 12px 16px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+
+.container:hover .text-box {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        flex-direction: column;
+    }
+
+    .right-container {
+        left: 0;
+    }
+
+    .timeline::after {
+        left: 30px;
+    }
+
+    .left-container-arrow,
+    .right-container-arrow {
+        left: 15px;
+        border-width: 12px 16px 12px 0;
+        border-color: transparent #fff transparent transparent;
+    }
+
+    .company {
+        left: 20px;
+        transform: translateX(0);
+        width: 60px;
+        height: 60px;
+    }
+
+    .pro-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .text-box {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .text-box h2 {
+        font-size: 20px;
+    }
+}
