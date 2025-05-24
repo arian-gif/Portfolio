@@ -1,5 +1,3 @@
-import './projectcard.css';
-
 function ProjectCard(props) {
     const image_style = {
         width: '100%', // Full width within container
