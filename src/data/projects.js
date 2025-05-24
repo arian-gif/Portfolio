@@ -4,6 +4,12 @@ const files = [
         route: "/projects/python",
         card_image: "/assets/images/python.png",
         projects:[
+    {
+            title: "Chatbot with Gemini API",
+            description: "I developed a fully functional AI chatbot using Google's Gemini 2.0 Flash model integrated with a Flask backend. The app features a clean, responsive front-end built with HTML, CSS, and JavaScript, allowing users to chat with an AI assistant in real-time. Used Flask routes to manage the front-end and back-end communication.",
+            link: "https://github.com/arian-gif/arian-chat",
+            image:"/assets/images/deep-learning/gemini.png",       
+        },     
         {
             title: " Zillow Data Automation and Form Submission with Selenium",
             description: "A Python-based web scraper that extracts property data (price, address, and link) from a Zillow clone using BeautifulSoup and Selenium. The extracted data is automatically submitted to a Google Form using Selenium’s browser automation, demonstrating automated data extraction, form filling, and browser interaction.",
@@ -22,12 +28,6 @@ const files = [
             link: "https://github.com/arian-gif/cafe-page",
             image:"/assets/images/web-dev/cafe.png",
         },
-        {
-            title: "Pong Game with OOP",
-            description: " A Python-based Pong game developed using object-oriented principles with custom Paddle, Ball, and Scoreboard classes. The game leverages the turtle module for graphical rendering and dynamic screen updates, while incorporating precise event handling for paddle movement and collision detection. The scoring system and game logic are managed through modular class-based architecture, showcasing structured and efficient Python programming.",
-            link: "https://github.com/arian-gif/pong",
-            image:"/assets/images/python/pong.png",
-        },
         { 
             title: "Snake Game with OOP",
             description: "This classic Snake game is built entirely with Python, utilizing the Turtle module for graphics and animation. It follows an object-oriented approach, with separate classes managing the snake's movement, food generation, and scoring system. The game logic includes event-driven key controls, real-time updates, and collision detection for both the walls and the snake itself. This project showcases Python’s strengths in game development, object-oriented programming, and event handling.",
@@ -35,13 +35,58 @@ const files = [
             image:"/assets/images/python/snake-game.png",
         },
         
-        { 
-            title: "Python GUI Quiz Game",
-            description: "This Python-based quiz game presents users with true or false questions in an interactive format, leveraging OOP and Tkinter for a smooth experience. The Question class structures data, while QuizBrain manages game logic, scoring, and HTML-decoded questions. The Interface class handles the GUI, dynamically updating the canvas and providing real-time feedback with color changes. This project showcases my ability to build engaging applications using Python, demonstrating strengths in GUI development, event handling, and data processing.",
-            link: "https://github.com/arian-gif/fun-quiz",
-            image:"/assets/images/python/quiz.png",
-        },
         ],
+    },
+    {
+        category:"Machine Learning",
+        route: "/projects/machine-learning",
+        card_image: "/assets/images/machine-learning.png",
+        projects:[
+            {
+                title: "House Price Regression Model",
+                description: "I developed a regression-based machine learning project to predict house prices using a Kaggle housing dataset containing both numerical and categorical features. This involved preprocessing steps such as encoding categorical variables, scaling features for models like Support Vector Regression, and splitting the data into training and test sets. Using scikit-learn, I implemented multiple regression models including Multiple Linear Regression, Polynomial Regression, Decision Tree, Random Forest, and SVR and evaluated their performance using R² scores. ",
+                link: "https://github.com/arian-gif/Housing-Project",
+                image:"/assets/images/machine-learning/House.jpg",       
+            },
+            {
+                title: "Irish Species Clustering Model",
+                description: "In this project, I applied clustering techniques such as K-Means and Hierarchical Clustering to analyze and group Irish species based on their features using a dataset from Kaggle. The goal was to discover natural patterns and meaningful clusters without labeled data. I implemented K-Means clustering, using methods like the Elbow Method to determine the optimal number of clusters, and Hierarchical Clustering, which builds a dendrogram to visualize nested groupings without predefining cluster counts.",
+                link: "https://github.com/arian-gif/Irish-species-clustering",
+                image:"/assets/images/machine-learning/irish.jpg",       
+            },
+            {
+                title: "Spam Classifier Model",
+                description: "I built an email spam classifier using natural language processing and machine learning techniques. The project involved cleaning and preprocessing raw email text data by removing non-alphabetic characters, converting to lowercase, stemming, and removing stopwords while preserving negations. I then created a Bag of Words representation to convert text into numerical features. Using scikit-learn, I encoded labels, split the dataset into training and test sets, and trained a Logistic Regression model to classify emails as spam or not. This classifier achieved a 97% accuracy.",
+                link: "https://github.com/arian-gif/Spam-classifier",
+                image:"/assets/images/machine-learning/spam.jpg",       
+            },
+             {
+                title: "Social Network Ads Classification Model",
+                description: "In this project, I developed multiple machine learning models to classify whether users from a social network would purchase a product based on their age and estimated salary. Using a Kaggle dataset, I applied data preprocessing steps including feature scaling and a training-test split. I implemented and compared several classifiers using scikit-learn, including Logistic Regression, Naive Bayes, SVM, Kernel SVM, Decision Tree, Random Forest, and K-Nearest Neighbors. Kernel SVM and KNN achieved the highest accuracy of 93%, demonstrating strong classification performance.",
+                link: "https://github.com/arian-gif/Social-network-classication",
+                image:"/assets/images/machine-learning/ad.jpg",       
+            },
+        ]
+
+    },
+    {
+        category:"Deep Learning",
+        route: "/projects/deep-learning",
+        card_image: "/assets/images/deep-learning.png",
+        projects:[
+            {
+                title: "Chatbot with Gemini API",
+                description: "I developed a fully functional AI chatbot using Google's Gemini 2.0 Flash model integrated with a Flask backend. The app features a clean, responsive front-end built with HTML, CSS, and JavaScript, allowing users to chat with an AI assistant in real-time. I handled environment variable management with dotenv, structured the conversation history to maintain a smooth user experience, and used Flask routes to manage the front-end and back-end communication via JSON. The project demonstrates my ability to integrate advanced AI models into web applications and build interactive UIs.",
+                link: "https://github.com/arian-gif/arian-chat",
+                image:"/assets/images/deep-learning/gemini.png",       
+            },
+            {
+                title: "ANN for Heart Disease Prediction",
+                description: "I developed an Artificial Neural Network (ANN) using TensorFlow to predict heart disease based on patient data. The project involved comprehensive data preprocessing, including handling missing values, encoding categorical variables, and feature scaling. I designed a sequential ANN with two hidden layers using ReLU activation and a sigmoid output layer for binary classification. The model was trained on a cleaned dataset using the Adam optimizer and evaluated with a confusion matrix and accuracy score, showcasing effective prediction performance. This project highlights my skills in data cleaning, model building, and applying deep learning to healthcare analytics.",
+                link: "https://github.com/arian-gif/Heart-Disease",
+                image:"/assets/images/deep-learning/heart.jpg",       
+            },
+        ]
     },
     {
         category:'Database',

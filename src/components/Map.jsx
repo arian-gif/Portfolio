@@ -9,16 +9,24 @@ function Map() {
                     key={index} 
                     className={`container ${index % 2 === 0 ? 'left-container' : 'right-container'}`}
                 >
-                    {/* Professional Image Positioned Absolutely */}
-                    <img 
-                        className={`pro-image ${index % 2 === 0 ? 'pro-image-left' : 'pro-image-right'}`} 
-                        src={event.proImage} 
-                        alt={event.title} 
-                    />
+        
+                    {event.proImage && (
+                        <img 
+                            className={`pro-image ${index % 2 === 0 ? 'pro-image-left' : 'pro-image-right'}`} 
+                            src={event.proImage} 
+                            alt={event.title} 
+                        />
+                    )}
+                    
                     
                     <div className="text-box">
                         <h2>{event.title}</h2>
-                        <small>{event.date}</small>
+                        <div>
+                            <small className="text-gray-500 block mt-1">
+                                {event.role} &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; {event.date}
+                            </small>
+                        </div>
+
                         <p>{event.description}</p>
                         <span className={`${index % 2 === 0 ? 'left-container' : 'right-container'}-arrow`} />
                     </div>
