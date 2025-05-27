@@ -75,6 +75,12 @@ const files = [
         card_image: "/assets/images/deep-learning.png",
         projects:[
             {
+                title: "Mango or Not",
+                description: "I developed a convolutional neural network (CNN) using TensorFlow to classify images as mango or not mango, demonstrating the entire workflow from data collection and augmentation to model training and used live picture from webcam. I used Docker to create a consistent environment ensuring Python compatibility with TensorFlow, and sourced image data efficiently through the icrawler library for diverse and relevant training samples.",
+                link: "https://github.com/arian-gif/Mango-CNN",
+                image:"/assets/images/deep-learning/mango.jpg", 
+            },
+            {
                 title: "Chatbot with Gemini API",
                 description: "I developed a fully functional AI chatbot using Google's Gemini 2.0 Flash model integrated with a Flask backend. The app features a clean, responsive front-end built with HTML, CSS, and JavaScript, allowing users to chat with an AI assistant in real-time. I handled environment variable management with dotenv, structured the conversation history to maintain a smooth user experience, and used Flask routes to manage the front-end and back-end communication via JSON. The project demonstrates my ability to integrate advanced AI models into web applications and build interactive UIs.",
                 link: "https://github.com/arian-gif/arian-chat",
