@@ -92,6 +92,12 @@ const files = [
                 link: "https://github.com/arian-gif/Heart-Disease",
                 image:"/assets/images/deep-learning/heart.jpg",       
             },
+            {
+                title: "Weather Forecasting with RNN",
+                description: "A machine learning project that uses a Recurrent Neural Network (RNN) built with PyTorch to predict future temperatures based on multivariate weather data. It features end-to-end preprocessing, feature scaling, sequence modeling, and regression evaluation. The model is trained on historical data and captures temporal patterns to forecast temperature trends accurately.",
+                link: "https://github.com/arian-gif/Weather",
+                image:"/assets/images/deep-learning/weather.jpg",    
+            }
         ]
     },
     {
