@@ -3,7 +3,7 @@ const events = [
         title: 'CoinWa',
         role: 'Ai Engineering Intern',
         date: "May 2025 - Aug 2025",
-        description: "At CoinWa, I’m leading the development of an intelligent, AI system for financial literacy education. The system uses deep learning and NLP to generate personalized learning content and dynamically adapt lesson difficulty based on each user's strengths and weaknesses. I’m building models for user skill tracking and integrating transformer-based NLP for exercise generation. My work spans model training (PyTorch & Hugging Face), user modeling, and deployment of AI APIs that drive real-time learning experiences tailored to each learner.",
+        description: "As an AI Engineer Intern at CoinWa, I developed a Duolingo-style financial literacy platform that used a lightweight ANN classifier to analyze user performance, detect weak areas, and recommend personalized lessons through an adaptive feedback system. I also built a conversational NLP assistant powered by Hugging Face Transformers and locally deployed using Ollama, enabling engaging financial education interactions. My work involved fine-tuning Transformer models to optimize tone, accuracy, and responsiveness, using local parameter tuning and deployment strategies to deliver a customized and efficient user experience.",
         image: '/assets/images/coinwa.jpg',
     },
     {

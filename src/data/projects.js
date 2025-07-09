@@ -17,17 +17,18 @@ const files = [
             image:"/assets/images/python/data-automation.png",
         },
         {
+            title: "AI Sports Commentary App",
+            description: "A full-stack AI system that generates real-time sports commentary from video clips using Whisper for speech transcription, PyTorch for computer vision, and Gemini for dynamic LLM-based narration. Built with React, FastAPI, and Tailwind for a smooth user experience.",
+            link: "https://github.com/arian-gif/ai-commentator-backend",
+            image:"/assets/images/python/AI_Sports_Commentary.png",
+        },
+        {
             title: "Top 10 Movies List",
             description: "A Flask-based movie management app that allows users to add, update, delete, and display movie records using a PostgreSQL database. It features form validation with Flask-WTF, responsive design with Flask-Bootstrap, and secure configuration using environment variables. The app includes functionality for ranking, reviewing, and storing movie details like titles, ratings, and images.",
             link: "https://github.com/arian-gif/top-10-movies",
             image:"/assets/images/web-dev/top10movies.png",
         },
-        { 
-            title: "Cafe Finder App with Flask",
-            description: "This Flask-based web app lets users submit and browse café recommendations, storing data in a CSV file. It features Flask-WTF for form validation, Flask-Bootstrap for styling, and environment variables for security. This project showcases Python’s efficiency in web development, data handling, and seamless user interactions.",
-            link: "https://github.com/arian-gif/cafe-page",
-            image:"/assets/images/web-dev/cafe.png",
-        },
+    
         { 
             title: "Snake Game with OOP",
             description: "This classic Snake game is built entirely with Python, utilizing the Turtle module for graphics and animation. It follows an object-oriented approach, with separate classes managing the snake's movement, food generation, and scoring system. The game logic includes event-driven key controls, real-time updates, and collision detection for both the walls and the snake itself. This project showcases Python’s strengths in game development, object-oriented programming, and event handling.",
@@ -74,6 +75,12 @@ const files = [
         route: "/projects/deep-learning",
         card_image: "/assets/images/deep-learning.png",
         projects:[
+            {
+                title: "AI Sports Commentary App",
+                description: "A full-stack AI system that generates real-time sports commentary from video clips using Whisper for speech transcription, PyTorch for computer vision, and Gemini for dynamic LLM-based narration. Built with React, FastAPI, and Tailwind for a smooth user experience.",
+                link: "https://github.com/arian-gif/ai-commentator-backend",
+                image:"/assets/images/python/AI_Sports_Commentary.png",
+            },
             {
                 title: "Mango or Not",
                 description: "I developed a convolutional neural network (CNN) using TensorFlow to classify images as mango or not mango, demonstrating the entire workflow from data collection and augmentation to model training and used live picture from webcam. I used Docker to create a consistent environment ensuring Python compatibility with TensorFlow, and sourced image data efficiently through the icrawler library for diverse and relevant training samples.",
